@@ -11,6 +11,7 @@ public class ArregloBidimensional {
 		this.matrizA = matrizA;
 	}
 
+	public ArregloBidimensional(double[][] matrizA) {
 		this.matrizA = matrizA;
 	}
 }
