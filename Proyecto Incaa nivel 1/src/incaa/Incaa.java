@@ -7,12 +7,7 @@ import pelicula.Pelicula;
 
 public class Incaa {
 	
-	private List<Pelicula> catalogo;
-
-	public Incaa() {
-		super();
-		this.catalogo = new ArrayList<Pelicula>();
-	}
+	private List<Pelicula> catalogo = new ArrayList<Pelicula>();
 
 	public List<Pelicula> getCatalogo() {
 		return catalogo;
