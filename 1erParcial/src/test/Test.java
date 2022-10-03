@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Test {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         SistemaSaludDispositivos e1 = new SistemaSaludDispositivos();
 
         System.out.println("1) ");
@@ -17,16 +17,15 @@ public class Test {
         System.out.println(e1.traerEmpresa("Empresa 1"));
 
         System.out.println("3) ");
-        e1.agregarDispositivo("Sensor Calor","A2020",e1.traerEmpresa("Empresa 1"));
-        e1.agregarDispositivo("Sensor Presion","A2325",e1.traerEmpresa("Empresa 1"));
-        e1.agregarDispositivo("Sensor Temperatura","B2021",e1.traerEmpresa("Empresa 2"));
-        e1.agregarDispositivo("Sensor Humedad","B2326",e1.traerEmpresa("Empresa 2"));
-
-        System.out.println("4) ");
         try {
+            e1.agregarDispositivo("Sensor Calor","A2020",e1.traerEmpresa("Empresa 1"));
+            e1.agregarDispositivo("Sensor Presion","A2325",e1.traerEmpresa("Empresa 1"));
+            e1.agregarDispositivo("Sensor Temperatura","B2021",e1.traerEmpresa("Empresa 2"));
+            e1.agregarDispositivo("Sensor Humedad","B2326",e1.traerEmpresa("Empresa 2"));
+            System.out.println("4) ");
             e1.agregarDispositivo("Sensor Movimiento", "B2022",e1.traerEmpresa("Empresa 1"));
         }catch (Exception e){
-            System.out.println("Excepcion : "+e.getMessage());
+            System.out.println("Excepcion: "+e.getMessage());
         }
 
         System.out.println("5) ");

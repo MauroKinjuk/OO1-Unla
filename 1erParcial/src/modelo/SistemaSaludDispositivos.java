@@ -13,7 +13,7 @@ public class SistemaSaludDispositivos {
     }
 
     public boolean agregarEmpresa(String nombre){
-        Empresa empresa = null;
+        //Empresa empresa = null;
         int id = 1;
         if (!lstEmpresas.isEmpty()){
             id = lstEmpresas.get(lstEmpresas.size() - 1).getId() + 1;
@@ -23,12 +23,10 @@ public class SistemaSaludDispositivos {
 
     public Empresa traerEmpresa(String nombre){
         Empresa empresa = null;
-        boolean flag = false;
         int i = 0;
-        while(i<lstEmpresas.size() && !flag){
+        while(i<lstEmpresas.size() && empresa == null){
             if (lstEmpresas.get(i).getNombre().equals(nombre)){
                 empresa = lstEmpresas.get(i);
-                flag = true;
             }
             i++;
         }
@@ -36,7 +34,7 @@ public class SistemaSaludDispositivos {
     }
 
     public boolean agregarDispositivo(String nombre, String codigo, Empresa empresa) throws Exception {
-        Dispositivo dispositivo = null;
+        //Dispositivo dispositivo = null;
         int id = 1;
         if (!lstDispositivos.isEmpty()){
             id = lstDispositivos.get(lstDispositivos.size() - 1).getId() + 1;
@@ -49,7 +47,7 @@ public class SistemaSaludDispositivos {
         Dispositivo dispositivo = null;
         int i = 0;
 
-        while(i<lstDispositivos.size()){
+        while(i<lstDispositivos.size() && dispositivo == null){
             if (lstDispositivos.get(i).getCodigo().equals(codigo)){
                 dispositivo = lstDispositivos.get(i);
             }

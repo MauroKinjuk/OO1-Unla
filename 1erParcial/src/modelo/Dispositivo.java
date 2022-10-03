@@ -80,14 +80,14 @@ public class Dispositivo {
     }
 
     public boolean agregarMetrica(int valor, LocalDate fecha, LocalTime hora){
-        Metrica metrica = null;
+        //Metrica metrica = null;
         return lstMetricas.add(new Metrica(valor, fecha, hora));
     }
 
     public Metrica traerMetrica(LocalDate desde, LocalTime hora){
         Metrica metrica = null;
         int i = 0;
-        while(i<lstMetricas.size()){
+        while(i<lstMetricas.size() && metrica == null){
             if (lstMetricas.get(i).getFecha().equals(desde) && lstMetricas.get(i).getHora().equals(hora)){
                 metrica = lstMetricas.get(i);
             }
