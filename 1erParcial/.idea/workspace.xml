@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f91b7d54-739e-41aa-8e9e-bf0b2689f99d" name="Changes" comment="Se agrega doble puntos de cortes en while, y se cambia el Throw Exception en el main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/modelo/Dispositivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/modelo/Dispositivo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/modelo/SistemaSaludDispositivos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/modelo/SistemaSaludDispositivos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/test/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/Dispositivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Dispositivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/SistemaSaludDispositivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/SistemaSaludDispositivos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +28,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,8 +51,16 @@
       <workItem from="1664232093407" duration="29000" />
       <workItem from="1664232398524" duration="210000" />
       <workItem from="1664737740955" duration="445000" />
-      <workItem from="1664833948620" duration="1291000" />
+      <workItem from="1664833948620" duration="1883000" />
     </task>
+    <task id="LOCAL-00001" summary="Se agrega doble puntos de cortes en while, y se cambia el Throw Exception en el main">
+      <created>1664836633431</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664836633431</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,5 +80,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se agrega doble puntos de cortes en while, y se cambia el Throw Exception en el main" />
     <option name="LAST_COMMIT_MESSAGE" value="Se agrega doble puntos de cortes en while, y se cambia el Throw Exception en el main" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

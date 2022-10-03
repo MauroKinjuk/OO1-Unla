@@ -32,8 +32,26 @@ public class Dispositivo {
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setCodigo(String codigo) throws Exception {
+        if (codigo.length() == 5){
+            if (codigo.charAt(0) == 'A' || codigo.charAt(0) == 'B'){
+                int suma = 0;
+                for (int i = 1; i < codigo.length(); i++) {
+                    suma += Integer.parseInt(String.valueOf(codigo.charAt(i)));
+                }
+                if (codigo.charAt(0) == 'A' && suma % 2 == 0){
+                    this.codigo = codigo;
+                } else if (codigo.charAt(0) == 'B' && suma % 2 != 0){
+                    this.codigo = codigo;
+                } else {
+                    throw new Exception("EL codigo debe ser par si la letra empieza con A, impar si es con B");
+                }
+            } else {
+                throw new Exception("El codigo debe empezar por la letra A o B");
+            }
+        } else {
+            throw new Exception("El codigo debe contener 5 caracteres");
+        }
     }
 
     public List<Metrica> getLstMetricas() {
@@ -56,26 +74,7 @@ public class Dispositivo {
         this.id = id;
         this.nombre = nombre;
         this.empresa = empresa;
-        if (codigo.length() == 5){
-            if (codigo.charAt(0) == 'A' || codigo.charAt(0) == 'B'){
-                int suma = 0;
-                for (int i = 1; i < codigo.length(); i++) {
-                    suma += Integer.parseInt(String.valueOf(codigo.charAt(i)));
-                }
-                if (codigo.charAt(0) == 'A' && suma % 2 == 0){
-                    this.codigo = codigo;
-                } else if (codigo.charAt(0) == 'B' && suma % 2 != 0){
-                    this.codigo = codigo;
-                } else {
-                    throw new Exception("EL codigo debe ser par si la letra empieza con A, impar si es con B");
-                }
-            } else {
-                throw new Exception("El codigo debe empezar por la letra A o B");
-            }
-        } else {
-            throw new Exception("El codigo debe contener 5 caracteres");
-        }
-
+        setCodigo(codigo);
         this.lstMetricas = new ArrayList<>();
     }
 
