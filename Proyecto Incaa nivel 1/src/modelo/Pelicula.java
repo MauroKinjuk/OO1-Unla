@@ -1,4 +1,4 @@
-package pelicula;
+package modelo;
 
 public class Pelicula {
 	

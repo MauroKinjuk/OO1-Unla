@@ -1,13 +1,18 @@
-package incaa;
+package modelo;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import pelicula.Pelicula;
+import modelo.Pelicula;
 
 public class Incaa {
 	
-	private List<Pelicula> catalogo = new ArrayList<Pelicula>();
+	private List<Pelicula> catalogo;
+
+	//Mejora la creacion del ArrayList
+	public Incaa(){
+		this.catalogo = new ArrayList<>();
+	}
 
 	public List<Pelicula> getCatalogo() {
 		return catalogo;
@@ -21,8 +26,9 @@ public class Incaa {
 	public Pelicula traerPelicula(int idPelicula) {
 		Pelicula p1 = null;
 		int i = 0;
-		
-		while (i < catalogo.size()) {
+
+		//Doble punto de control en el while, checkeando el tamaño y que no sea null
+		while (i < catalogo.size() && p1 == null) {
 			if (catalogo.get(i).getIdPelicula() == idPelicula) {
 				p1 = catalogo.get(i);
 			}
@@ -34,6 +40,7 @@ public class Incaa {
 	//2
 	public boolean agregarPelicula(String pelicula) {
 		int id = 1;
+		//Si el catalogo NO esta vacio, entonces genero un id, si no es 1
 		if(!catalogo.isEmpty()) {
 			id = catalogo.get(catalogo.size()-1).getIdPelicula()+1;
 		}
@@ -44,9 +51,10 @@ public class Incaa {
 	public Pelicula traerPelicula(String partePelicula) {
 		Pelicula p1 = null;
 		int i = 0;
-		
-		while (i < catalogo.size()) {
-			if (catalogo.get(i).getPelicula() == partePelicula) {
+
+		//Doble punto de control en el while, checkeando el tamaño y que no sea null
+		while (i < catalogo.size() && p1 == null) {
+			if (catalogo.get(i).getPelicula().equals(partePelicula)) {
 				p1 = catalogo.get(i);
 			}
 			i++;
