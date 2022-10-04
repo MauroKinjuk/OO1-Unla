@@ -1,13 +1,11 @@
 package modelo;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class Incaa {
 
-    private List<Pelicula> catalogo = new ArrayList<Pelicula>();
-    private List<Genero> genero = new ArrayList<Genero>();
+    private List<Pelicula> catalogo = new ArrayList<>();
 
 	public List<Pelicula> getCatalogo() {
 		return catalogo;
@@ -16,15 +14,7 @@ public class Incaa {
 	public void setCatalogo(List<Pelicula> catalogo) {
 		this.catalogo = catalogo;
 	}
-	
-    
-	public List<Genero> getGenero() {
-		return genero;
-	}
 
-	public void setGenero(List<Genero> genero) {
-		this.genero = genero;
-	}
 
 	public boolean agregarPelicula(String nombre, Genero genero) {
 		int id = 1;
@@ -36,9 +26,35 @@ public class Incaa {
 	}
 	
 	public void mostrarCatalogo() {
-		Iterator<Pelicula> it = catalogo.iterator();
-		while(it.hasNext()) {
-			System.out.println(it.next());
+		for (Pelicula pelicula : catalogo) {
+			System.out.println(pelicula);
 		}
 	}
+
+	//Traigo pelicula por ID
+	public Pelicula traerPelicula(int id){
+		Pelicula p = null;
+		int i = 0;
+		while(i<catalogo.size() && p == null){
+			if(catalogo.get(i).getIdPelicula() == id){
+				p = catalogo.get(i);
+			}
+			i++;
+		}
+		return p;
+	}
+
+	//Traigo todas las peliculas de un mismo genero
+	public List<Pelicula> traerPelicula(Genero genero){
+		List<Pelicula> p = new ArrayList<>();
+		int i = 0;
+		while(i<catalogo.size()){
+			if (catalogo.get(i).getGenero() == genero){
+				p.add(catalogo.get(i));
+			}
+			i++;
+		}
+		return p;
+	}
+
 }
