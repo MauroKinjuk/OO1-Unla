@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f91b7d54-739e-41aa-8e9e-bf0b2689f99d" name="Changes" comment="Se agrega doble puntos de cortes en while, y se cambia el Throw Exception en el main">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/modelo/Dispositivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/modelo/Dispositivo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/modelo/SistemaSaludDispositivos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/modelo/SistemaSaludDispositivos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1er_parcial_tm_2022/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/Dispositivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Dispositivo.java" afterDir="false" />
-    </list>
+    <list default="true" id="f91b7d54-739e-41aa-8e9e-bf0b2689f99d" name="Changes" comment="Se agrega doble puntos de cortes en while, y se cambia el Throw Exception en el main" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,18 +22,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,6 +46,7 @@
       <workItem from="1664232398524" duration="210000" />
       <workItem from="1664737740955" duration="445000" />
       <workItem from="1664833948620" duration="1883000" />
+      <workItem from="1665240444654" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="Se agrega doble puntos de cortes en while, y se cambia el Throw Exception en el main">
       <created>1664836633431</created>
