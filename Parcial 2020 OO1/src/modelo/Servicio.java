@@ -1,9 +1,21 @@
 package modelo;
 
+import java.time.LocalDate;
+
 public class Servicio {
     private String codServicio;
     private double porcentajeDescuento;
     private boolean enPromocion;
+
+    private LocalDate dia;
+
+    public LocalDate getDia() {
+        return dia;
+    }
+
+    public void setDia(LocalDate dia) {
+        this.dia = dia;
+    }
 
     public String getCodServicio() {
         return codServicio;
@@ -33,9 +45,10 @@ public class Servicio {
         this.enPromocion = enPromocion;
     }
 
-    public Servicio(String codServicio, double porcentajeDescuento, boolean enPromocion) {
+    public Servicio(String codServicio, double porcentajeDescuento, boolean enPromocion, LocalDate dia) {
         this.codServicio = codServicio;
         this.porcentajeDescuento = porcentajeDescuento;
         this.enPromocion = enPromocion;
+        this.dia = dia;
     }
 }

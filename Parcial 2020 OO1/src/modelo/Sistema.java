@@ -1,5 +1,6 @@
 package modelo;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,6 +41,11 @@ public class Sistema {
         }
 
         return s;
+    }
+
+    public List<Servicio> traerSerbicio(boolean enPromocion, LocalDate dia){
+        List<Servicio> s = new ArrayList<>();
+
     }
 
 }
