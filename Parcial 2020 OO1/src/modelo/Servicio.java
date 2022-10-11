@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Servicio {
     private String codServicio;
-    private double porcentajeDescuento;
+    protected double porcentajeDescuento;
     private boolean enPromocion;
 
     private LocalDate dia;
@@ -45,10 +45,9 @@ public class Servicio {
         this.enPromocion = enPromocion;
     }
 
-    public Servicio(String codServicio, double porcentajeDescuento, boolean enPromocion, LocalDate dia) {
-        this.codServicio = codServicio;
+    public Servicio(String codServicio, double porcentajeDescuento, boolean enPromocion) throws Exception {
+        setCodServicio(codServicio);
         this.porcentajeDescuento = porcentajeDescuento;
         this.enPromocion = enPromocion;
-        this.dia = dia;
     }
 }

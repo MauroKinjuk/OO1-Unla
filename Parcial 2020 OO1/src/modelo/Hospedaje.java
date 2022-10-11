@@ -20,7 +20,7 @@ public class Hospedaje extends Servicio{
         this.precioPorNoche = precioPorNoche;
     }
 
-    public Hospedaje(String codServicio, double porcentajeDescuento, boolean enPromocion, String hospedaje, double precioPorNoche) {
+    public Hospedaje(String codServicio, double porcentajeDescuento, boolean enPromocion, String hospedaje, double precioPorNoche) throws Exception {
         super(codServicio, porcentajeDescuento, enPromocion);
         this.hospedaje = hospedaje;
         this.precioPorNoche = precioPorNoche;
