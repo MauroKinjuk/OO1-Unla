@@ -2,30 +2,20 @@ package modelo;
 
 import java.time.LocalDate;
 
-public class Servicio {
-    private String codServicio;
+public abstract class Servicio {
+    protected String codServicio;
     protected double porcentajeDescuento;
-    private boolean enPromocion;
-
-    private LocalDate dia;
-
-    public LocalDate getDia() {
-        return dia;
-    }
-
-    public void setDia(LocalDate dia) {
-        this.dia = dia;
-    }
+    protected boolean enPromocion;
 
     public String getCodServicio() {
         return codServicio;
     }
 
     public void setCodServicio(String codServicio) throws Exception {
-        if (codServicio.length() == 6){
-            this.codServicio = codServicio;
+        if (codServicio.length() != 6){
+            throw new Exception("El codigo debe ser de 6 digitos.");
         }else{
-            throw new Exception("El codigo debe tener una longitud de 6.");
+            this.codServicio = codServicio;
         }
     }
 
@@ -45,9 +35,20 @@ public class Servicio {
         this.enPromocion = enPromocion;
     }
 
+    public abstract double calcularPrecioFinal(LocalDate dia);
+
     public Servicio(String codServicio, double porcentajeDescuento, boolean enPromocion) throws Exception {
         setCodServicio(codServicio);
         this.porcentajeDescuento = porcentajeDescuento;
         this.enPromocion = enPromocion;
+    }
+
+    @Override
+    public String toString() {
+        return "\nServicio{" +
+                "codServicio='" + codServicio + '\'' +
+                ", porcentajeDescuento=" + porcentajeDescuento +
+                ", enPromocion=" + enPromocion +
+                "}\n";
     }
 }
