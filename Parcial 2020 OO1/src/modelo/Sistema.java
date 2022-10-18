@@ -45,7 +45,7 @@ public class Sistema {
     public ArrayList<Servicio> traerServicio(LocalDate dia, boolean enPromocion){
         ArrayList<Servicio> serv = new ArrayList<>();
         for (Servicio servicio : lstServicio) {
-            if (servicio.isEnPromocion() && servicio.calcularPrecioFinal(dia) > 0) {
+            if (servicio.isEnPromocion() == enPromocion && servicio.calcularPrecioFinal(dia) > 0) {
                 serv.add(servicio);
             }
         }
