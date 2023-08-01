@@ -42,11 +42,7 @@ public class Test {
 
 		System.out.println("5)");
 		// Con un try catch trato de agregar el vuelo "AR2435"
-		try {
-			sistema.agregarVuelo("AR2435", LocalDateTime.of(2023, 5, 27, 15, 20, 0), null, 15);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
+		sistema.agregarVuelo("AR2435", LocalDateTime.of(2023, 5, 27, 15, 20, 0), null, 15);
 
 		System.out.println("6)");
 		// Agrego las siguientes cargas

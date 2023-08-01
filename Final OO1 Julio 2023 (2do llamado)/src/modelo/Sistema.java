@@ -74,10 +74,6 @@ public class Sistema {
 	public boolean agregarVuelo(String vuelo, LocalDateTime fechaHoraPartida, LocalDateTime fechaHoraArribo,
 			int pesoMaximoEquipaje) throws Exception {
 		int id = 1;
-		//Si la fechaHoraArribo es null y la fechaHoraPartida es anterior a la actual lanzo la excepcion "ERROR"
-		if (fechaHoraArribo == null && fechaHoraPartida.isBefore(LocalDateTime.now())) {
-			throw new Exception("ERROR: El vuelo no arribo, por lo tanto la fechaHora de partida es anterior a la actual.");
-		}
 		if(!lstvuelos.isEmpty()) {
 			id = lstvuelos.get(lstvuelos.size()-1).getIdVuelo()+1;
 		}
