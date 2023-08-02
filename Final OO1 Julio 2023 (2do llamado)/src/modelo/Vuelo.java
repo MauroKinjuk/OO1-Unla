@@ -37,13 +37,13 @@ public class Vuelo {
 		return fechaHoraPartida;
 	}
 
-	public void setFechaHoraPartida(LocalDateTime fechaHoraPartida) throws Exception {
+	public void setFechaHoraVuelo(LocalDateTime fechaHoraPartida, LocalDateTime fechaHoraArribo) throws Exception {
 		//Si la fechaHoraArribo es null y la fechaHoraPartida es anterior a la actual lanzo la excepción "ERROR"
 		if(fechaHoraArribo == null && fechaHoraPartida.isBefore(LocalDateTime.now())) {
 			throw new Exception("ERROR: El vuelo no arribo, por lo tanto la fechaHora de partida es anterior a la actual.");
-		} else {
-			this.fechaHoraPartida = fechaHoraPartida;
 		}
+		this.fechaHoraPartida = fechaHoraPartida;
+		this.fechaHoraArribo = fechaHoraArribo;
 	}
 
 	public int getPesoMaximoEquipaje() {
@@ -55,17 +55,12 @@ public class Vuelo {
 	}
 	
 	public Vuelo(int idVuelo, String vuelo, LocalDateTime fechaHoraArribo, LocalDateTime fechaHoraPartida,
-			int pesoMaximoEquipaje) {
+			int pesoMaximoEquipaje) throws Exception {
 		super();
 		this.idVuelo = idVuelo;
 		this.vuelo = vuelo;
-		this.fechaHoraArribo = fechaHoraArribo;
+		setFechaHoraVuelo(fechaHoraPartida, fechaHoraArribo);
 		this.pesoMaximoEquipaje = pesoMaximoEquipaje;
-		try {
-			this.setFechaHoraPartida(fechaHoraPartida);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
 	}
 
 	@Override
